@@ -31,12 +31,12 @@ function init() {
 const AddProduct = () => {
 
     if (localStorage.length > 0) {
-        document.getElementById('BagCounter').style.visibility = "visible";
-        document.getElementById('BagCounter').innerText = localStorage.length;
-        document.getElementById('BagCounter').style.visibility = "visible";
-        document.getElementById('BagImage').src = "assets/icons/BagFull.svg";
+        document.getElementById('cart_icon').style.visibility = "visible";
+        document.getElementById('cart_icon').innerText = localStorage.length;
+        document.getElementById('cart_icon').style.visibility = "visible";
+        document.getElementById('cart_image').src = "assets/icons/BagFull.svg";
     } else {
-        document.getElementById('BagCounter').style.visibility = "hidden";
-        document.getElementById('BagImage').src = "assets/icons/svgexport-51.svg";
+        document.getElementById('cart_icon').style.visibility = "hidden";
+        document.getElementById('cart_image').src = "assets/icons/svgexport-51.svg";
     }
 }
