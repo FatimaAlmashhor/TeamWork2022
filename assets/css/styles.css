@@ -1,0 +1,105 @@
+html {
+    direction: rtl;
+    text-align: right;
+}
+
+.oneLineDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.oneLineDiv a {
+    color: rgb(71 131 218);
+    padding-left: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+
+/* Presentations Section  */
+
+.presentations {
+    width: 95%;
+    margin: auto;
+    /* margin-top: 50px; */
+}
+
+.presentations>h1 {
+    color: darkred;
+}
+
+.card {
+    background-color: #FFF;
+    box-shadow: 0 0 2px;
+    text-align: center;
+    padding: 0 20px 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    position: relative;
+    flex: 1;
+}
+
+.card:hover {
+    outline: 1px solid red;
+}
+
+.card .header {
+    animation: none;
+}
+
+.card .body h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+}
+
+.card .body span {
+    color: #42526e;
+}
+
+.card .body h1 img {
+    margin-left: 5px;
+    width: 30px;
+    height: 40px;
+}
+
+.card .body h2 {
+    color: red;
+}
+
+.card .body h5 {
+    color: #2c8989;
+    font: inherit;
+}
+
+.card .body h2 sub {
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.card .footer {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.card .footer img {
+    width: 30px;
+}
+
+.card .footer .origin {
+    cursor: pointer;
+}
