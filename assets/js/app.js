@@ -1,4 +1,6 @@
 // ======== start >> By : Dhoha =========
+
+
 //########################## Start addToCart Script ##########################
 const cartCounter   = document.getElementById('cart');
 const carts         = document.querySelectorAll('.js-cart');
@@ -62,4 +64,6 @@ changeLang.forEach( element =>
             }
         });
     });
+
+    
 // ======== End >> By : Dhoha =========
