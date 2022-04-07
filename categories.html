@@ -13,9 +13,35 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 
     <title>Categories</title>
+
+    <link rel="stylesheet" href="assets/css/Dhoha-category-header.css">
 </head>
 
 <body>
+    <!-- //By Dhoha / start header -->
+    <header class="top-header">
+
+        <!-- Logo block -->
+        <div class="logo">
+            <a href="index.html"><img src="assets/images/logo.svg" alt="BookStore"></a>
+        </div>
+
+        <!-- Search block -->
+        <form action="">
+            <div class="search">
+                <input type="text" class="search__input" placeholder="البحث">
+                <button class="search__btn"><img src="assets/images/icon/search.svg" alt="بحث"></button>
+            </div>
+        </form> 
+
+        <!-- Cart block -->
+        <div class="cart">
+            <a href="cart.html"><img src="assets/images/icon/cart-1.svg" class="cart__icon" alt="السلّة"></a>
+            <span class="notficatio" id="cart"></span>
+        </div>
+
+    </header>
+    <!-- //By Dhoha / end header -->
 
     <!-- books -->
     <main>
@@ -119,6 +145,7 @@
     <script type="module" src="./assets/js/cart.js"></script>
     <script type="module" src="./assets/js/collaps.js"></script>
     <script type="module" src="./assets/js/search.js"></script>
+  <script src="assets/js/app.js"></script>
 
 </body>
 
