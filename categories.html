@@ -5,12 +5,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./assets/css/product-card.css">
+    <link rel="stylesheet" href="./assets/css/collaps.css">
+    <link rel="stylesheet" href="./assets/css/category.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
     <title>Categories</title>
 </head>
 
 <body>
-  
+
+    <!-- books -->
+    <main>
+        <section class=" w-full flex-col row  container">
+            <div class=" w-full flex-col ">
+                <!-- top section path / orders -->
+                <div>
+                    <p class="color-blue">الرئسية / الكتب العربيه / كتب الكترونيه </p>
+                </div>
+                <!-- type of books / orders  -->
+                <div class="flex-row justify_content_between w-full px-1 container ">
+                    <div class="flex-row mx-1 py-1 px-1 border-1 border-green rounded-5 my-1 ">
+                        <span class="w-20 mx-1">
+                            <img src='../assets/svgs/arabic books.svg' />
+                        </span>
+                        <h3 class="color-green font-bold ">كتاب ألكتروني</h3>
+                    </div>
+                    <div class=" flex-row my-1 align_self_end  ">
+                        <div class="flex-row">
+                            <p>الترتيب بحسب :</p>
+                            <div>
+                                <!-- drop down -->
+                                <select class="dropdown">
+                                    <option>الرجاء الاختيار ...</option>
+                                    <option>الوقت</option>
+                                    <option>السعر</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- the saprated sections -->
+                <div class=" cat_section  ">
+                    <!-- right section -->
+                    <div class="filter_section row mx-1  p-1 ">
+                        <div class=" mx-auto w-full">
+                            <!-- the filter part -->
+                            <div class="collap">
+                                <div class="collaps_header  bg-green ">
+                                    <p class="color-white">
+                                        تصفيه النتائج
+                                    </p>
+                                </div>
+                                <div class="collaps_content">
+                                    <div class="collaps_item">
+                                        <div class="collaps_item_header flex-row justify_content_between w-full">
+                                            <p> علامه تجاريه </p>
+                                            <span class="collaps_icon" data-type='squire'> - </span>
+                                        </div>
+                                        <div class="collaps_item_body">
+                                            <div class="p-1">
+                                                something
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collaps_item">
+                                        <div class="collaps_item_header flex-row justify_content_between w-full">
+                                            <p> علامه تجاريه </p>
+                                            <span class="collaps_icon" data-type='squire'> - </span>
+                                        </div>
+                                        <div class="collaps_item_body">
+                                            <div class="p-1">
+                                                <input type="range" value="10" />
+                                                <span>ر.ي</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collaps_item">
+                                        <div class="collaps_item_header flex-row justify_content_between w-full">
+                                            <p> علامه تجاريه </p>
+                                            <span class="collaps_icon" data-type='squire'> - </span>
+                                        </div>
+                                        <div class="collaps_item_body">
+                                            <div class="p-1">
+                                                something
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- the left section -->
+                    <div class="products_row_content flex-1  ">
+                        <!-- the orders section -->
+
+
+                        <!-- products section -->
+                        <div class="slider_col_warrper">
+                            <ul id='product_list' class=" flex-row flex-center ">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- /books -->
+    <!-- scripts -->
+    <script type="module" src="./assets/js/cart.js"></script>
+    <script type="module" src="./assets/js/collaps.js"></script>
+    <script type="module" src="./assets/js/search.js"></script>
+
 </body>
 
 </html>
